@@ -538,10 +538,6 @@ body::-webkit-scrollbar {
   transition-delay: 0s;
 }
 
-.Footer {
-  position: relative;
-}
-
 .Contact {
   position: absolute;
   top: -30vh;
@@ -567,7 +563,6 @@ body::-webkit-scrollbar {
 }
 
 .Contact form {
-  /* margin-left: 20vw; */
   width: 50%;
   font-family: Outfit;
   display: inline-block;
@@ -625,9 +620,12 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   z-index: -1;
+  position: relative;
+  min-height: 60vh;
 }
 
 .Footer-links {
+  margin-top: 2%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -639,7 +637,6 @@ body::-webkit-scrollbar {
 .Footer-links > div {
   line-height: 0.5;
   margin: 0 auto;
-  
 }
 
 .Footer-links a:link {
