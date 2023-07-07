@@ -73,7 +73,7 @@ function Projects() {
             
             <div className="Project-container first">
                 <div className="Project">
-                    <h1 className="Project-name">Metrics Farm</h1>
+                    <h1 className="Project-name">Functional Metrics Farm</h1>
                     <div className="Project-content">
                         <p>Internship project with PNC Financial Services</p>
                         <p>May - Aug 2023</p>
@@ -159,7 +159,7 @@ function Projects() {
             </div>
             <div className="Project-container second">
                 <div className="Project">
-                    <h2 className="Project-name">CARLA Driving Simulator</h2>
+                    <h1 className="Project-name">CARLA Driving Simulator</h1>
                     <div className="Project-content">
                         <p>University of Michigan Project Team</p>
                         <p>Jan - Dec 2022</p>
@@ -174,6 +174,7 @@ function Projects() {
                         style={modalStyle}
                         contentLabel="Project Modal">
                             <h1>CARLA Driving Simulator</h1>
+                            <h2>Project Team under the Multidisciplinary Design Program <a href="https://mdp.engin.umich.edu/">(MDP)</a></h2>
                             <button onClick={closeModal3}>X</button>
                             <p>Motivation:</p>
                             <p>Driving simulators are used to assess the safety and usability of motor vehicles. However, driving simulators
@@ -183,9 +184,11 @@ function Projects() {
                             </p>
                             <p>My Role:</p>
                             <p>As the student leader of this project team, I oversee operations and project management, ensuring the organization
-                                and productivity of the team. Each week, I coordinate the team's standup meetings to assess our progress relative
-                                to the long-term goals. I also communicate with our research faculty mentor weekly to discuss further ways of 
-                                improving the team. 
+                                and productivity of the team. Each week, I coordinate the team's standup meetings to assess the team's progress relative
+                                to our long-term goals. I also created a project management spreadsheet to help our three subteams keep track of their 
+                                tasks and be able to designate subtasks to different members. Additionally, I manage communications with the
+                                Multidisciplinary Design Program to prepare for project fairs, design expos, and open labs. I also communicate with 
+                                our research faculty mentor weekly to discuss further ways of improving the structure and productivity of our team. 
                             </p>
                             <p>Tools:
                                 <ul>CARLA Simulator</ul>
@@ -197,9 +200,9 @@ function Projects() {
                     </div>
                 </div>
                 <div className="Project">
-                    <h1 className="Project-name">project 4</h1>
+                    <h1 className="Project-name">Sentiment Analysis</h1>
                     <div className="Project-content">
-                        <p>description 4</p>
+                        <p>Introduction to Machine Learning</p>
                         <button onClick={openModal4}>Details
                             <span className="border border-top"></span>
                             <span className="border border-right"></span>
@@ -211,7 +214,17 @@ function Projects() {
                         onRequestClose={closeModal4}
                         style={modalStyle}
                         contentLabel="Project Modal">
-                            <h1>Metrics Farm</h1>
+                            <h1>Sentiment Analysis</h1>
+                            <p>Motivation:</p>
+                            <p>The goal of this project was to be able to create a supervised learning model that can accurately classify a 
+                                set of Reddit comments based on the emotional tone of the comment. 
+                            </p>
+                            <p>Skills learned:
+                                <ul>Linear Kernel and Quadratic Kernel Support Vector Machines</ul>
+                                <ul>k-fold Cross Validation</ul>
+                                <ul>Asymmetric Cost Functions</ul>
+                                <ul>Feature Engineering</ul>
+                            </p>
                             <button onClick={closeModal4}>X</button>
                         </Modal>
                     </div>
