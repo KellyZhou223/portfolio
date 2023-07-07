@@ -9,10 +9,13 @@ body::-webkit-scrollbar {
 }
 
 .Header {
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   position:relative;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .Nav {
@@ -26,26 +29,26 @@ body::-webkit-scrollbar {
 
 .Nav li {
   float: right;
-  padding: 30px;
+  padding: 2%;
   color:#403d3b;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .Nav > li > a:link { 
   text-decoration: none; 
   color: #403d3b;
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 
 .Nav > li > a:visited { 
   text-decoration: none; 
-  color: #000000;
+  color: #403d3b;
 }
 
 .Nav > li > a:hover { 
   text-decoration: none; 
   color: #000000;
-  font-style: italic;
+  font-weight:800;
 }
 
 .Nav > li > a:active { 
@@ -57,31 +60,33 @@ body::-webkit-scrollbar {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   top:0;
   left:0;
-  padding-top:20vh;
-  padding-bottom:20vh;
-  padding-right: 40vh;
+  height: 100%;
+  width: 100%;
 }
 
 .App-header {
-  font-size: 50px;
+  font-size: 5vw;
+  position: absolute;
+  top: 20%;
+  left: 10vw;
   color: #403d3b;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-weight:bold;
   line-height: 0.5;
   text-align: left;
-  margin-right: 15vw;
+  margin-right: 10vw;
   z-index: 100;
 }
 
 .Dot {
   position:absolute;
-  top:30vh;
-  left:60vw;
-  height: 50vh;
-  width: 50vh;
+  top:10%;
+  right: 10%;
+  width: 30%;
+  height: 30%;
   background-color: #b9b1ad;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
   border-radius: 50%;
@@ -158,8 +163,10 @@ body::-webkit-scrollbar {
 
 .Dot > img{
   position: absolute;
-  top: 10vh;
-  left: 10vh;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
 }
 
 .image1 {
@@ -190,10 +197,10 @@ body::-webkit-scrollbar {
 
 .Background > p {
   position:absolute;
-  font-size: 20px;
-  top:60vh;
-  left:30vw;
-  font-family: Quicksand;
+  font-size: 2vw;
+  top:65vh;
+  left:20vw;
+  font-family: Outfit;
 }
 
 .Background.first > p {
@@ -233,7 +240,7 @@ body::-webkit-scrollbar {
 
 .Intro-header {
   text-align: center;
-  font-family: Quicksand;
+  font-family: Outfit;
   margin-left: 5vh;
   margin-right: 15vh;
   display: block;
@@ -246,7 +253,7 @@ body::-webkit-scrollbar {
 }
 
 .Intro-header p {
-  font-size: 20px;
+  font-size: 1.5vw;
   transform: translateY(50%);
   opacity: 0;
   overflow-y: scroll;
@@ -325,14 +332,18 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 20px;
-  font-family: Quicksand;
+  font-size: 1.5vw;
+  font-family: Outfit;
   font-weight: bold;
   z-index: -1;
 }
 
-.Projects > h1 {
+.Project-header {
   background-color: rgb(210, 179, 184);
+  position: relative;
+}
+
+.Projects h1 {
   margin: 0;
   padding: 5vh;
 }
@@ -358,6 +369,21 @@ body::-webkit-scrollbar {
   background-color: #d8cfca;
   min-height: 70vh;
   padding-bottom: 30vh;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.Project-container.second::before, .Project-container.second::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  transform-origin: left top;
+  transform: skewY(-10deg);
 }
 
 .Project {
@@ -371,28 +397,29 @@ body::-webkit-scrollbar {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10%;
   text-align: center;
+  z-index: 5;
+}
+
+.Project-name {
+  transform: translateY(100%);
+  font-size: 2.5vw;
 }
 
 .Project:hover .Project-name {
-  transform: translateY(0%);
+  transform: translateY(50%);
   transition: 1s;
 }
 
 .Project:hover .Project-content{
-  transform: translateY(0%);
+  transform: translateY(30%);
   opacity: 1;
   transition: 1s;
   text-align: center;
 }
 
-.Project-name {
-  margin-top: 10vh;
-  transform: translateY(150%);
-}
-
 .Project-content {
   color: #403d3b;
-  transform: translateY(150%);
+  transform: translateY(100%);
   opacity: 0;
   text-align: center;
   overflow-wrap: break-word;
@@ -401,14 +428,14 @@ body::-webkit-scrollbar {
 .Project-content > p {
   padding-left: 2vh;
   padding-right: 2vh;
-  font-size: 15px;
+  font-size: 1.2vw;
 }
 
 .Project-content > button {
   text-decoration: none;
   color: white;
   background-color: #403d3b;
-  font-family: Quicksand;
+  font-family: Outfit;
   padding: 2vh;
   position: relative;
   transform: scaleX(1);
@@ -428,7 +455,7 @@ body::-webkit-scrollbar {
   height: 65vh;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  font-family: Quicksand;
+  font-family: Outfit;
   z-index: 100;
   overflow-y: auto;
 }
@@ -441,8 +468,8 @@ body::-webkit-scrollbar {
   background: white;
   border: white;
   padding: 1vh;
-  font-size: 20px;
-  font-family: Quicksand;
+  font-size: 1.5vw;
+  font-family: Outfit;
   font-weight: bolder;
 }
 
@@ -533,7 +560,7 @@ body::-webkit-scrollbar {
 }
 
 .Contact > h1 {
-  font-family: Quicksand;
+  font-family: Outfit;
   text-align: center;
   transform: translateY(50%);
   opacity: 0;
@@ -542,7 +569,7 @@ body::-webkit-scrollbar {
 .Contact form {
   /* margin-left: 20vw; */
   width: 50%;
-  font-family: Quicksand;
+  font-family: Outfit;
   display: inline-block;
   transform: translateY(30%);
   opacity: 0;
@@ -558,7 +585,7 @@ body::-webkit-scrollbar {
   margin-bottom: 3vh;
   width: 100%;
   padding: 1vh;
-  font-family: Quicksand;
+  font-family: Outfit;
   border-radius: 15px;
   border-width: 1px;
 }
@@ -566,7 +593,7 @@ body::-webkit-scrollbar {
 .Contact textarea {
   padding: 2vh;
   width: 98%;
-  font-family: Quicksand;
+  font-family: Outfit;
   margin-bottom: 2vh;
   border-radius: 15px;
 }
@@ -577,7 +604,7 @@ body::-webkit-scrollbar {
   width: 104%;
   padding: 1.5vh;
   text-align: center;
-  font-family: Quicksand;
+  font-family: Outfit;
   border: none;
   color: #403d3b;
   border-radius: 15px;
@@ -618,8 +645,8 @@ body::-webkit-scrollbar {
 .Footer-links a:link {
   text-decoration: none;
   color: #403d3b;
-  font-size: 12px;
-  font-family: Quicksand;
+  font-size: 0.8vw;
+  font-family: Outfit;
 }
 
 .Footer-links a:hover {
@@ -645,15 +672,58 @@ body::-webkit-scrollbar {
   border-bottom: white;
   border-width: 0.3vh;
   border-style: solid;
-  margin-left: 70vh;
-  margin-right: 70vh;
-  font-size: 10px;
-  font-family: Quicksand;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 0.6vw;
+  font-family: Outfit;
   color: #403d3b;
   padding-top: 1vh;
   text-align: center;
 }
 
+.Resume {
+  position: absolute;
+  top: 30%; 
+  right: 20%;
+  width: 15vh;
+  height: 10vh;
+  border-radius: 50%;
+  background-color: #b9b1ad;
+  transform: scale(0.8);
+  font-family: Outfit;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+.Resume:hover {
+  cursor: pointer;
+  background-color: #e4d5b7;
+  transform: scale(1);
+  border-style: double;
+}
+
+.Resume-embed {
+  z-index: 500;
+}
+
+.Resume-img {
+  height: auto;
+}
+
+.Project-modal.resume {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.Project-modal.resume > iframe {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
 .None {
   height: 0;
+  min-width: 100vw;
+  min-height: 100vh;
 }
