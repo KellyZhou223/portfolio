@@ -134,6 +134,25 @@ function Projects() {
                         contentLabel="Project Modal">
                             <h1>Project Heimdall</h1>
                             <button onClick={closeModal2}>X</button>
+                            <p>Motivation:</p>
+                            <p>As an enterprise like Riot Games continues to grow at a rapid pace, there are increased complexities to the technology
+                                and procedures run by the company. These complexities raise more concerns about the susceptibility of internal systems to 
+                                external attackers. Information security engineers constantly have to monitor the environment to make sure technical policies
+                                are not being violated at any given time. But with the quantity and complexity of policies, it becomes more difficult to 
+                                manually monitor every rule. Project Heimdall aims to automate this process of continously monitoring for business policies
+                                to ultimately make this process easier for information security engineers.  
+                            </p>
+                            <p>My Role:</p>
+                            <p>As a software engineer, I worked on designing and implementing an extensible security tool that information security
+                                engineers could use to view, add, and/or remove business policies, as well as be able to receive alerts whenever
+                                a flag is raised due to some unexpected event. 
+                            </p>
+                            <p>Tech Stack:
+                                <ul>Python</ul>
+                                <ul>React.js & TypeScript</ul>
+                                <ul>PostgreSQL</ul>
+                                <ul>AWS (Lambda, S3, RDS)</ul>
+                            </p>
                         </Modal>
                     </div>
                 </div>
@@ -156,6 +175,24 @@ function Projects() {
                         contentLabel="Project Modal">
                             <h1>CARLA Driving Simulator</h1>
                             <button onClick={closeModal3}>X</button>
+                            <p>Motivation:</p>
+                            <p>Driving simulators are used to assess the safety and usability of motor vehicles. However, driving simulators
+                                can be expensive to purchase, too complex to use, or take too long to program. The goal of this project is to 
+                                create an easy-to-use, cost-effective driving simulator platform to support human factors research on driver
+                                workload, driver distraction, as well as interfaces for partially automated vehicles.
+                            </p>
+                            <p>My Role:</p>
+                            <p>As the student leader of this project team, I oversee operations and project management, ensuring the organization
+                                and productivity of the team. Each week, I coordinate the team's standup meetings to assess our progress relative
+                                to the long-term goals. I also communicate with our research faculty mentor weekly to discuss further ways of 
+                                improving the team. 
+                            </p>
+                            <p>Tools:
+                                <ul>CARLA Simulator</ul>
+                                <ul>Python</ul>
+                                <ul>Roadrunner</ul>
+                                <ul>Unreal Engine</ul>
+                            </p>
                         </Modal>
                     </div>
                 </div>
