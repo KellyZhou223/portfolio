@@ -177,26 +177,24 @@ body {
 }
 
 .Spacer.first {
-  position: sticky;
-  bottom: 0;
-  width: 100vh;
-  height: 100vw;
+  width: 100vw;
+  height: 100vh;
   transform-origin: left top;
-  transform: rotate(90deg) translateY(-100vh) translateX(100vh - 100vw);
+  transform: rotate(90deg) translateY(-100vh) translateX(calc(100vw - 100vh));
 }
 
 .Spacer.second {
   width: 100vw;
   height: 100vh;
-  /* transform-origin: left top;
-  transform: rotate(90deg) translateY(-100vh) translateX(-300vh); */
+  transform-origin: left top;
+  transform: rotate(90deg) translateY(-100vh);
 }
 
 .Background.first {
   z-index: 3;
   background-color: #f6e5d0;
-  position: sticky;
-  bottom: 0;
+  /* position: sticky;
+  bottom: 0; */
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: left top;
   width: 100vw;
@@ -205,19 +203,19 @@ body {
 .Background.second {
   z-index: 2;
   background-color: #eed9c4;
-  position: sticky;
-  bottom: 0;
+  /* position: sticky;
+  bottom: 0; */
   width: 100vw;
-  transform: rotate(90deg) translateY(-100vh) translateX(calc(100vh - 100vw));
+  transform: rotate(90deg) translateY(-100vh) translateX(calc(100vw - 200vh));
   transform-origin: left top;
 }
 
 .Background.third {
   background-color: #e4d5b7;
-  position: sticky;
-  bottom: 0;
+  /* position: sticky;
+  bottom: 0; */
   width: 100vw;
-  transform: rotate(90deg) translateY(-100vh) translateX(calc(100vh - 100vw));
+  transform: rotate(90deg) translateY(-100vh) translateX(calc(200vw - 400vh)); 
   transform-origin: left top;
 }
 
@@ -471,7 +469,7 @@ body {
 }
 
 .Project:hover .Project-content{
-  transform: translateY(0%);
+  transform: translateY(-5%);
   opacity: 1;
   transition: 1s;
   text-align: center;
