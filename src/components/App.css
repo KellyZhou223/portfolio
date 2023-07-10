@@ -105,6 +105,9 @@ body {
   .Project-name {
     font-size: 7vw;
   }
+  .Project-content {
+    font-size: 5vw;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -141,6 +144,9 @@ body {
   }
   .Project-name {
     font-size: 2.8vw;
+  }
+  .Project-content {
+    font-size: 1.8vw;
   }
 }
 
@@ -398,7 +404,7 @@ body {
   transition: 1s;
 }
 
-.Project:hover .Project-content{
+.Project:hover .Project-content {
   transform: translateY(-5%);
   opacity: 1;
   transition: 1s;
@@ -416,7 +422,6 @@ body {
 .Project-content > p {
   padding-left: 2vh;
   padding-right: 2vh;
-  font-size: 1.2vw;
 }
 
 .Project-content > button {
@@ -684,6 +689,7 @@ body {
   height: 10vh;
   border-radius: 50%;
   background-color: #b9b1ad;
+  border-color: black;
   transform: scale(0.8);
   font-family: Outfit;
   font-weight: bold;
