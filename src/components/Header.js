@@ -1,7 +1,6 @@
 import './App.css';
 import Nav from './Nav.js';
 import Row from './Row.js';
-import Scroll from './Scroll.js'
 import About from './About.js'
 
 function Header() {
@@ -9,7 +8,6 @@ function Header() {
         <div className="Header">
             <Nav />
             <Row />
-            <Scroll />
             <About />
         </div> 
         
