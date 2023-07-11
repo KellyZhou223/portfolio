@@ -334,7 +334,7 @@ body {
 }
 
 .Project-header {
-  background-color: rgb(210, 179, 184);
+  background-color: #eac9c1;
   position: relative;
 }
 
@@ -345,7 +345,7 @@ body {
 
 .Project-spacer {
   min-height: 90vh;
-  background-color: rgb(210, 179, 184);
+  background-color: #eac9c1;
 }
 
 .Project-container {
@@ -357,11 +357,11 @@ body {
 }
 
 .Project-container.first {
-  background-color: rgb(210, 179, 184);
+  background-color: #eac9c1;
 }
 
 .Project-container.second {
-  background-color: #d8cfca;
+  background-color: #d3ab9e;
   min-height: 70vh;
   padding-bottom: 30vh;
   position: relative;
@@ -547,7 +547,7 @@ body {
   right: 5vw;
   min-height: 50vh;
   width: 90vw;
-  background-color: #f6e5d0;
+  background-color: #ebd8d0;
   padding-top: 8vh;
   padding-bottom: 8vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -602,7 +602,7 @@ body {
   padding: 1.5vh;
   text-align: center;
   font-family: Outfit;
-  border: none;
+  border-width: 1px;
   color: #403d3b;
   border-radius: 15px;
 }
@@ -618,6 +618,8 @@ body {
 }
 
 .Footer {
+  background-image: url("background.jpg");
+  background-size: cover;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -670,9 +672,9 @@ body {
 
 .Footer p {
   border-top: #b9b1ad;
-  border-right: white;
-  border-left: white;
-  border-bottom: white;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: transparent;
   border-width: 0.3vh;
   border-style: solid;
   margin-left: 30%;
