@@ -1,9 +1,9 @@
 import './App.css';
 import {useRef, useEffect, useState} from 'react';
 
-const images = ["Headshot.png", "Linkedin.jpg", "Mail.jpg", "Github.png"];
+const images = ["Hello.png", "Programmer.png", "Creator.png", "Thinker.png"];
 const text = ["I am a...", "Programmer", "Creator", "Problem-Solver"]
-const classes = ["Image1", "Image2", "Image3", "Image4"]
+const classes = ["Image image1", "Image image2", "Image image3", "Image image4"]
 
 function Row() {
     const ref1 = useRef();
@@ -51,7 +51,7 @@ function Row() {
             </div>
             <div className="Header-container" >
                 <div className="Dot reveal">
-                    <img className={classes[currentIndex]} src={images[currentIndex]} alt="Char"></img>
+                    <img className={classes[currentIndex]} src={images[currentIndex]} alt={images[currentIndex]}></img>
                 </div>
                 <p>{text[currentIndex]}</p>
             </div>

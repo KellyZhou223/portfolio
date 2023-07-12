@@ -173,8 +173,8 @@ body {
   position: relative;
   background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 40vh;
-  height: 40vh;
+  width: 50vh;
+  height: 50vh;
   border-radius: 50%;
 }
 
@@ -199,10 +199,10 @@ body {
 
 .Dot > img{
   position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 50%;
-  height: 50%;
+  top: 5%;  
+  left: 8%;
+  width: 80%;
+  height: 80%;
 }
 
 .About-wrapper {
