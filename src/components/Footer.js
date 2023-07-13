@@ -42,11 +42,11 @@ function Footer() {
                 <h1 className="">Contact</h1>
                 <form id="contact" onSubmit={sendEmail} ref={form}>
                     <label>Name* </label>
-                    <input type="text" name="user_name" placeholder="Your name" required=""></input><br></br>
+                    <input type="text" name="user_name" placeholder="Your name" required></input><br></br>
                     <label>Email* </label>
-                    <input type="email" name="user_email" placeholder="Your email" required=""></input><br></br>
+                    <input type="email" name="user_email" placeholder="Your email" required></input><br></br>
                     <label>Message* </label>
-                    <textarea name="message" placeholder="Hey Kelly, let's connect!" required=""></textarea><br></br>
+                    <textarea name="message" placeholder="Hey Kelly, let's connect!" required></textarea><br></br>
                     <input type="submit" value="Send"></input>
                 </form>
             </div>

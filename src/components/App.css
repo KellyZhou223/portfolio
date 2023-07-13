@@ -91,7 +91,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 10%;
+    top: 8%;
+  }
+  .Dot {
+    width: 40vh;
+    height: 40vh;
   }
   .Nav > li > a:link {
     font-size: 2vw;
@@ -136,6 +140,10 @@ body {
     right: 20%;
     font-size: 50%;
   }
+  .Dot {
+    width: 50vh;
+    height: 50vh;
+  }
   .Nav > li > a:link {
     font-size: 1.5vw;
   }
@@ -173,8 +181,6 @@ body {
   position: relative;
   background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 50vh;
-  height: 50vh;
   border-radius: 50%;
 }
 
