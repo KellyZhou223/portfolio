@@ -112,6 +112,19 @@ body {
   .Project-content {
     font-size: 5vw;
   }
+  .Dot > img{
+    position: absolute;
+    top: 7%;  
+    left: 8%;
+    width: 80%;
+    height: 80%;
+  }
+  .Dot > p{
+    top: 82%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -124,6 +137,7 @@ body {
   .App-header {
     font-size: 5vw;
     text-align: left;
+    padding-left: 10%;
   }
   .Header-container > p {
     font-size: 2vw;
@@ -132,7 +146,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+
   }
   .Resume {
     position: absolute;
@@ -141,9 +156,13 @@ body {
     font-size: 50%;
   }
   .Dot {
-    width: 50vh;
-    height: 50vh;
+    width: 135vh;
+    height: 135vh;
+    transform: translateX(15vw);
+    overflow: hidden;
+    padding-right: 15%;
   }
+
   .Nav > li > a:link {
     font-size: 1.5vw;
   }
@@ -156,21 +175,43 @@ body {
   .Project-content {
     font-size: 1.2vw;
   }
+  .Dot > img{
+    position: absolute;
+    bottom: 20%;  
+    left: 15%;
+    width: 50%;
+    height: 50%;
+  }
+  .Dot > p{
+    top: 25%;
+    left: 15%;
+    width: 50%;
+    height: 50%;
+  }
+  .Header-container{
+    overflow: hidden;
+    width: 60%;
+  }
 }
 
 .App-header {
   color: #403d3b;
   font-family: 'Outfit', sans-serif;
   font-weight:bold;
-  line-height: 0.5;
   transform: translateX(-20%);
   opacity: 0;
+  width: 40%;
 }
 
 .App-header.reveal, .Header-container.reveal {
   transform: translateX(0);
   opacity: 1;
   transition: all ease-in 1s;
+}
+
+.Header-container {
+  white-space: nowrap;
+  opacity: 0;
 }
 
 .Header-container.reveal {
@@ -182,12 +223,6 @@ body {
   background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 50%;
-}
-
-.Header-container {
-  white-space: nowrap;
-  transform: translateX(20%);
-  opacity: 0;
 }
 
 .Header-container > div > p.reveal {
@@ -203,12 +238,9 @@ body {
     align-items: center;
   }
 
-.Dot > img{
+.Dot > p{
+  text-align: center;
   position: absolute;
-  top: 5%;  
-  left: 8%;
-  width: 80%;
-  height: 80%;
 }
 
 .About-wrapper {
@@ -224,6 +256,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-left: 0;
   border-radius: 55px;
+  z-index: 2;
 }
 
 .About {
@@ -336,7 +369,7 @@ body {
   text-align: center;
   font-family: Outfit;
   font-weight: bold;
-  z-index: -1;
+  z-index: 1;
 }
 
 .Project-header {
@@ -561,6 +594,7 @@ body {
   justify-content: center;
   text-align: center;
   border-radius: 30px;
+  z-index: 3;
 }
 
 .Contact > h1 {
@@ -603,7 +637,6 @@ body {
 
 .Contact input[type=submit] {
   background-color: #b9b1ad;
-  color: white;
   width: 104%;
   padding: 1.5vh;
   text-align: center;
@@ -611,6 +644,7 @@ body {
   border-width: 1px;
   color: #403d3b;
   border-radius: 15px;
+  border: black;
 }
 
 .Contact input[type=submit]:hover {
@@ -629,9 +663,9 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  z-index: -1;
   position: relative;
   min-height: 50vh;
+  z-index: 2;
 }
 
 .Footer-links {

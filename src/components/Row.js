@@ -1,7 +1,11 @@
 import './App.css';
 import {useRef, useEffect, useState} from 'react';
+import Hello from './Hello.png';
+import Programmer from './Programmer.png';
+import Creator from './Creator.png';
+import Thinker from './Thinker.png';
 
-const images = ["Hello.png", "Programmer.png", "Creator.png", "Thinker.png"];
+const images = [Hello, Programmer, Creator, Thinker];
 const text = ["I am a...", "Programmer", "Creator", "Problem-Solver"]
 const classes = ["Image image1", "Image image2", "Image image3", "Image image4"]
 
@@ -51,9 +55,10 @@ function Row() {
             </div>
             <div className="Header-container" >
                 <div className="Dot reveal">
+                    <p>{text[currentIndex]}</p>
                     <img className={classes[currentIndex]} src={images[currentIndex]} alt={images[currentIndex]}></img>
                 </div>
-                <p>{text[currentIndex]}</p>
+                
             </div>
         </div>
     )
