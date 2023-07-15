@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 import {useState, useEffect} from 'react';
 
 function Projects() {
-    Modal.setAppElement(document.body);
+    Modal.setAppElement(document.getElementById('id'));
     const [modalIsOpen, setIsOpen] = useState(false);
     const [modalIsOpen2, setIsOpen2] = useState(false);
     const [modalIsOpen3, setIsOpen3] = useState(false);
@@ -38,6 +38,7 @@ function Projects() {
     }
     function closeModal5() {
         setIsOpen5(false);
+        
     }
 
     useEffect(() => {
@@ -50,27 +51,30 @@ function Projects() {
 
     const modalStyle = {
     overlay: {
-        background: "#F6e5D0"
+        // top: "50%",
+        // left: "50%",
+        // transform: "translate(-50%, -50%)",
+        
+        background: "none",
     }
     };
 
     return (
-        <div className="Projects">
+        <div className="Projects" id = "id">
             <div className="Project-spacer"></div>
             <div id="Projects" className="Project-header">
                 <h1>Projects</h1>
                 <button onClick={openModal5} className="Resume">Resume</button>
                 <Modal 
-                className="Project-modal resume"
-                isOpen={modalIsOpen5}
-                onRequestClose={closeModal5}
-                style={modalStyle}
-                contentLabel="Project Modal">
-                <iframe src="https://drive.google.com/file/d/132OKNHdpP5wys-xXqOh-fCwkeAwmxVbV/preview" title="Resume" allow="autoplay"></iframe>
-                    <button onClick={closeModal5}>X</button>
+                    className="Project-modal resume"
+                    isOpen={modalIsOpen5}
+                    onRequestClose={closeModal5}
+                    style={modalStyle}
+                    contentLabel="Project Modal">
+                    <iframe src="https://drive.google.com/file/d/132OKNHdpP5wys-xXqOh-fCwkeAwmxVbV/preview" title="Resume" allow="autoplay"></iframe>
+                        <button onClick={closeModal5}>X</button>
                 </Modal>
             </div>
-            
             <div className="Project-container first">
                 <div className="Project">
                     <h1 className="Project-name">Functional Metrics Farm</h1>
@@ -106,12 +110,13 @@ function Projects() {
                                 which include viewing the data from a user interface or other platforms like Tableau. Ultimately, analysts would be able to view metrics
                                 data in a more streamlined way, allowing them to discover insights more easily and effectively. 
                             </p>
-                            <p>Tech Stack:
-                                <ul>Apache Spark</ul>
-                                <ul>Python</ul>
-                                <ul>SQL &amp; HiveQL</ul>
-                                <ul>Apache Hadoop</ul>
-                            </p>
+                            <p>Tech Stack:</p>
+                            <ul>
+                                <li>Apache Spark</li>
+                                <li>Python</li>
+                                <li>SQL &amp; HiveQL</li>
+                                <li>Apache Hadoop</li>
+                            </ul>
                             <button onClick={closeModal}>X</button>
                         </Modal>
                     </div>
@@ -147,12 +152,13 @@ function Projects() {
                                 engineers could use to view, add, and/or remove business policies, as well as be able to receive alerts whenever
                                 a flag is raised due to some unexpected event. 
                             </p>
-                            <p>Tech Stack:
-                                <ul>Python</ul>
-                                <ul>React.js & TypeScript</ul>
-                                <ul>PostgreSQL</ul>
-                                <ul>AWS (Lambda, S3, RDS)</ul>
-                            </p>
+                            <p>Tech Stack:</p>
+                            <ul>
+                                <li>Python</li>
+                                <li>React.js & TypeScript</li>
+                                <li>PostgreSQL</li>
+                                <li>AWS (Lambda, S3, RDS)</li>
+                            </ul>
                         </Modal>
                     </div>
                 </div>
@@ -190,12 +196,13 @@ function Projects() {
                                 Multidisciplinary Design Program to prepare for project fairs, design expos, and open labs. I also communicate with 
                                 our research faculty mentor weekly to discuss further ways of improving the structure and productivity of our team. 
                             </p>
-                            <p>Tools:
-                                <ul>CARLA Simulator</ul>
-                                <ul>Python</ul>
-                                <ul>Roadrunner</ul>
-                                <ul>Unreal Engine</ul>
-                            </p>
+                            <p>Tools:</p>
+                            <ul>
+                                <li>CARLA Simulator</li>
+                                <li>Python</li>
+                                <li>Roadrunner</li>
+                                <li>Unreal Engine</li>
+                            </ul>
                         </Modal>
                     </div>
                 </div>
@@ -219,18 +226,20 @@ function Projects() {
                             <p>The goal of this project was to be able to create a supervised learning model that can accurately classify a 
                                 set of Reddit comments based on the emotional tone of the comment. 
                             </p>
-                            <p>Skills learned:
-                                <ul>Linear Kernel and Quadratic Kernel Support Vector Machines</ul>
-                                <ul>k-fold Cross Validation</ul>
-                                <ul>Asymmetric Cost Functions</ul>
-                                <ul>Feature Engineering</ul>
-                            </p>
+                            <p>Skills learned:</p>
+                            <ul>
+                                <li>Linear Kernel and Quadratic Kernel Support Vector Machines</li>
+                                <li>k-fold Cross Validation</li>
+                                <li>Asymmetric Cost Functions</li>
+                                <li>Feature Engineering</li>
+                            </ul>
                             <button onClick={closeModal4}>X</button>
                         </Modal>
                     </div>
                 </div>
             </div>
         </div>
+        
     )
 }
 

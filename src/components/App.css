@@ -125,6 +125,10 @@ body {
     width: 50%;
     height: 50%;
   }
+  .Project-modal {
+    margin: 5vh;
+    padding: 5vh;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -147,7 +151,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
   }
   .Resume {
     position: absolute;
@@ -156,9 +159,9 @@ body {
     font-size: 50%;
   }
   .Dot {
-    width: 135vh;
-    height: 135vh;
-    transform: translateX(15vw);
+    width: 75vw;
+    height: 75vw;
+    transform: translateX(15vw) translateY(-5vh);
     overflow: hidden;
     padding-right: 15%;
   }
@@ -179,18 +182,23 @@ body {
     position: absolute;
     bottom: 20%;  
     left: 15%;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
   }
   .Dot > p{
-    top: 25%;
+    top: 35%;
     left: 15%;
-    width: 50%;
-    height: 50%;
+    width: 40%;
   }
   .Header-container{
     overflow: hidden;
     width: 60%;
+  }
+  .Project-modal {
+    margin: 8vh;
+    padding: 10vh;
+    height: 65vh;
+    width: 80vw;
   }
 }
 
@@ -256,7 +264,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-left: 0;
   border-radius: 55px;
-  z-index: 2;
+  z-index: 0;
 }
 
 .About {
@@ -362,14 +370,13 @@ body {
 
 .Projects {
   position: relative;
-  left: 0;
   min-height: 150vh;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-family: Outfit;
   font-weight: bold;
-  z-index: 1;
+  z-index: -3;
 }
 
 .Project-header {
@@ -404,7 +411,7 @@ body {
   min-height: 70vh;
   padding-bottom: 30vh;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   overflow: visible;
 }
 
@@ -412,7 +419,7 @@ body {
   content: '';
   position: absolute;
   top: 0;
-  z-index: -1;
+  z-index: -2;
   width: 100%;
   height: 100%;
   background: inherit;
@@ -421,7 +428,6 @@ body {
 }
 
 .Project {
-  position: relative;
   top: 0;
   left: 0;
   width: 50vh;
@@ -431,7 +437,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10%;
   text-align: center;
-  z-index: 5;
+  z-index:  1;
 }
 
 .Project-name {
@@ -482,13 +488,10 @@ body {
 
 .Project-modal {
   position: relative;
-  margin: 8vh;
-  padding: 10vh;
-  height: 65vh;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: Outfit;
-  z-index: 100;
+  z-index: 10;
   overflow-y: auto;
 }
 
