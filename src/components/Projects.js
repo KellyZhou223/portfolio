@@ -73,7 +73,7 @@ function Projects() {
             </div>
             <div className="Project-container first">
                 <div className="Project">
-                    <h1 className="Project-name">Functional Metrics Farm</h1>
+                    <h1 className="Project-name">Metrics Farm</h1>
                     <div className="Project-content">
                         <p>Internship project with PNC Financial Services</p>
                         <p>May - Aug 2023</p>
