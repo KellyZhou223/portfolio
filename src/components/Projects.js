@@ -67,13 +67,13 @@ function Projects() {
                     onRequestClose={closeModal5}
                     style={modalStyle}
                     contentLabel="Project Modal">
-                    <iframe src="https://drive.google.com/file/d/132OKNHdpP5wys-xXqOh-fCwkeAwmxVbV/preview" title="Resume" allow="autoplay"></iframe>
+                        <iframe src="https://drive.google.com/file/d/1ymjsOO1tuamv7Avbw03B8Jxzi8AJyHBT/preview" width="640" height="480" allow="autoplay"></iframe>
                         <button onClick={closeModal5}>X</button>
                 </Modal>
             </div>
             <div className="Project-container first">
                 <div className="Project">
-                    <h1 className="Project-name">Metrics Farm</h1>
+                    <h1 className="Project-name">Functional Metrics Farm</h1>
                     <div className="Project-content">
                         <p>Internship project with PNC Financial Services</p>
                         <p>May - Aug 2023</p>
@@ -161,7 +161,7 @@ function Projects() {
             </div>
             <div className="Project-container second">
                 <div className="Project">
-                    <h1 className="Project-name">CARLA Driving Simulator</h1>
+                    <h1 className="Project-name">CARLA Simulator</h1>
                     <div className="Project-content">
                         <p>University of Michigan Project Team</p>
                         <p>Jan - Dec 2022</p>
