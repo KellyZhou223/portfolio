@@ -40,7 +40,7 @@ canvas {
     opacity: 0;
     width: 100%;
     height: 100%;
-    background-image: url("back-wave.svg");
+    /* background-image: url("back-wave.svg"); */
     animation: fadeInBottom 2.5s ease forwards 3s;
 }
 
@@ -88,7 +88,7 @@ canvas {
 }
 
 .nav-bar {
-    padding: 3vw;
+    padding: 2vh 0 2vh 0;
     opacity: 0;
     animation: fadeInRight 2s ease forwards 3.5s;
 }
@@ -195,11 +195,15 @@ a[target="_blank"]::after {
     align-items: center;
     text-align: center;
     background-color: #f7efe9;
-    padding: 5vw 20vw 5vw 20vw;
+    padding: 10vh 20vw 5vh 20vw;
+}
+
+.about h1 {
+    font-size: 3em;
 }
 
 .about p {
-    font-size: 1.3em;
+    font-size: 1.3em
 }
 
 .about a {
@@ -210,4 +214,32 @@ a[target="_blank"]::after {
 
 .about a:hover {
     font-weight: bolder;
+}
+
+.project {
+    background-image: linear-gradient(#f7efe9, #8E7871);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 10vw 5vh 10vw;
+}
+
+.project-card {
+    background-color: white;
+    opacity: 80%;
+    border: #8E7871;
+    border-style: double;
+    border-radius: 1.5em;
+    border-width: 0.3em;
+    width: 70%;
+    padding: 3vh 2vw 3vh 2vw;
+    margin: 3vh 0 2vh 0;
+}
+
+.project-card:hover {
+    opacity: 1;
+}
+
+.project h1 {
+    font-size: 3em;
 }
