@@ -61,15 +61,26 @@ canvas {
     animation: fadeInBottom 2.5s ease forwards 3s;
 }
 
-.logo {
-    padding: 1vw;
+.top {
     position: fixed;
     top: 0;
-    left: 0;
-    height: 8%;
+    z-index: 3;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
     opacity: 0;
-    animation: fadeInLeft 2.5s ease forwards 3.2s;
-    z-index: 2;
+    animation: fadeInTop 1s ease forwards 3s;
+}
+
+.logo {
+    padding: 0 0 0 1vw;
+    height: 100%;
+    opacity: 0;
+    animation: fadeInTop 2.5s ease forwards 3.2s;
 }
 
 .logo img {
@@ -78,10 +89,6 @@ canvas {
 
 .nav-bar {
     padding: 3vw;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 2;
     opacity: 0;
     animation: fadeInRight 2s ease forwards 3.5s;
 }
@@ -154,7 +161,7 @@ a[target="_blank"]::after {
     }
 }
 
-@keyframes fadeInLeft {
+@keyframes fadeInTop {
     from {
       opacity: 0;
       transform: translateY(-15%);
@@ -184,8 +191,23 @@ a[target="_blank"]::after {
 .about {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     text-align: center;
     background-color: #f7efe9;
+    padding: 5vw 20vw 5vw 20vw;
+}
+
+.about p {
+    font-size: 1.3em;
+}
+
+.about a {
+    text-decoration: none;
+    color: #8E7871;
+    font-weight: 500;
+}
+
+.about a:hover {
+    font-weight: bolder;
 }
