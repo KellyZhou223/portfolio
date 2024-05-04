@@ -216,12 +216,12 @@ a[target="_blank"]::after {
     font-weight: bolder;
 }
 
-.project {
+.experience {
     background-image: linear-gradient(#f7efe9, #8E7871);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5vh 10vw 5vh 10vw;
+    padding: 10vh 10vw 5vh 10vw;
 }
 
 .project-card {
@@ -234,10 +234,45 @@ a[target="_blank"]::after {
     width: 70%;
     padding: 3vh 2vw 3vh 2vw;
     margin: 3vh 0 2vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .project-card:hover {
     opacity: 1;
+    transform: scale(1.05,1.05);
+    box-shadow: 0.2em 0.2em 0.2em grey;
+}
+
+.experience h1 {
+    font-size: 3em;
+}
+
+.experience p {
+    font-size: 1.1em;
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.tools span {
+    background-color: #8E7871;
+    border-radius: 1em;
+    padding: 0 1vw 0 1vw;
+    height: 4.5vh;
+    margin: 0 0.5vw 0 0.5vw;
+    color: white;
+}
+
+.project {
+    background-color: #8E7871;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project h1 {
