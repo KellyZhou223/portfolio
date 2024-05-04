@@ -252,6 +252,15 @@ a[target="_blank"]::after {
     font-size: 1.1em;
 }
 
+.experience a {
+    text-decoration: none;
+    color: #8E7871;
+}
+
+.experience a:hover {
+    font-weight: bolder;
+}
+
 .diagram {
     background-image: url("paper.jpg");
     background-size: cover;
