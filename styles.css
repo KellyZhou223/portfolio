@@ -195,7 +195,7 @@ a[target="_blank"]::after {
     align-items: center;
     text-align: center;
     background-color: #f7efe9;
-    padding: 10vh 20vw 5vh 20vw;
+    padding: 10vh 20vw 0 20vw;
 }
 
 .about h1 {
@@ -226,7 +226,6 @@ a[target="_blank"]::after {
 
 .project-card {
     background-color: white;
-    opacity: 80%;
     border: #8E7871;
     border-style: double;
     border-radius: 1.5em;
@@ -251,6 +250,12 @@ a[target="_blank"]::after {
 
 .experience p {
     font-size: 1.1em;
+}
+
+.diagram {
+    background-image: url("paper.jpg");
+    background-size: cover;
+    margin: 0 0 0 2vw;
 }
 
 .tools {
