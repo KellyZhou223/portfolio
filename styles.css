@@ -58,15 +58,6 @@ canvas {
     animation: fadeInBottom 2.5s ease forwards 3s;
 }
 
-.layer2 {
-    aspect-ratio: 900/600;
-    background-image: url("bottom-wave.svg");
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 .top {
     position: fixed;
     top: 0;
@@ -350,6 +341,17 @@ a[target="_blank"]::after {
     text-align: center;
     font-size: 1.5em;
     position: relative;
+    border-right: 0.1em solid #8E7871;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: right;
+    padding-right: 2vw;
+}
+
+.project-item label:hover {
+    background-image: linear-gradient(to right,#f7efe9, #8E7871);
+    font-weight: bold;
 }
 
 .project-item label:hover {
@@ -399,6 +401,13 @@ input:checked ~ .content-test {
     opacity: 1;
 }
 
+input:checked ~ label {
+    background-image: linear-gradient(to right,#f7efe9, #8E7871);
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+}
+
 .picto {
     height: 3em;
     width: 3em;
@@ -418,4 +427,22 @@ input:checked ~ .content-test {
 
 .contact {
     position: relative;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.contact form {
+    width: 100%;
+    display: inline-block;
+}
+
+.layer2 {
+    aspect-ratio: 720/144;
+    background-image: url("bottom-wave.svg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }

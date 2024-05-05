@@ -143,6 +143,12 @@
                                 news articles to make real-time stock market recommendations. ZenStock aims to help users navigate the complexities of 
                                 the stock market and make more informed decisions based on current events.
                             </p>
+                            <div class="tools">
+                                <span>Python</span>
+                                <span>Apache Spark</span>
+                                <span>Hadoop</span>
+                                <span>SQL</span>
+                            </div>
                           </div>
                         </li>
                         <li class="project-item">
@@ -246,7 +252,18 @@
             </div>
             <div class="layer2"></div>
             <div class="contact" id="contact">
-                fhdhlcashk.;
+                <div>
+                    <h1>Chat with me!</h1>
+                    <form id="contact" onSubmit={sendEmail} ref={form}>
+                        <label>Name* </label>
+                        <input type="text" name="user_name" placeholder="Your name" required></input><br></br>
+                        <label>Email* </label>
+                        <input type="email" name="user_email" placeholder="Your email" required></input><br></br>
+                        <label>Message* </label>
+                        <textarea name="message" placeholder="Hey Kelly, let's connect!" required></textarea><br></br>
+                        <input type="submit" value="Send"></input>
+                    </form>
+                </div>
             </div>
         </div>
         <script src="app.js"></script>
