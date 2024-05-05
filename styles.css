@@ -44,7 +44,7 @@ canvas {
     animation: fadeInBottom 2.5s ease forwards 3s;
 }
 
-.spacer {
+.layer1 {
     position: absolute;
     bottom: 0;
     aspect-ratio: 900/600;
@@ -52,13 +52,19 @@ canvas {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.layer1 {
     background-image: url("front-wave.svg");
     z-index: 2;
     opacity: 0;
     animation: fadeInBottom 2.5s ease forwards 3s;
+}
+
+.layer2 {
+    aspect-ratio: 900/600;
+    background-image: url("bottom-wave.svg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .top {
@@ -263,7 +269,7 @@ a[target="_blank"]::after {
 
 .diagram {
     background-image: url("paper.jpg");
-    background-size: cover;
+    background-size: contain;
     margin: 0 0 0 2vw;
 }
 
@@ -291,4 +297,125 @@ a[target="_blank"]::after {
 
 .project h1 {
     font-size: 3em;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 80%;
+    border: #8E7871;
+    border-style: double;
+    border-radius: 1.5em;
+    border-width: 0.3em;
+    margin: 0 0 10vh 0;
+    background-color: white;
+    box-shadow: 0.2em 0.2em 0.2em grey;
+    overflow: hidden;
+    flex-direction: row;
+    position: relative;
+}
+
+.left-zone {
+    height: 100%;
+    width: 30%;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    display: flex;
+}
+  
+.project-list {
+    display: flex;
+    list-style: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project-item input {
+    display: none;
+}
+
+.project-item label {
+    display: block;
+    opacity: 0.5;
+    height: 5vh;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+}
+
+.project-item label:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.content-test {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.content-test h1 {
+    margin: 1vh;
+    color: #8E7871;
+}
+
+.content-test p {
+    width: 70%;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.right-zone {
+    width: 70%;
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    height: 100%;
+}
+  
+input:checked ~ .content-test {
+    transform: translateY(0%);
+    transition: transform 1s, -webkit-transform 1s;
+    opacity: 1;
+}
+
+.picto {
+    height: 3em;
+    width: 3em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content1 span {
+    background-image: url("zen_stock_logo.png");
+}
+
+.content2 span {
+    background-image: url("chiron_logo.png");
+    border-radius: 50%;
+}
+
+.contact {
+    position: relative;
 }
