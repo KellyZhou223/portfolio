@@ -277,6 +277,8 @@ a[target="_blank"]::after {
     height: 4.5vh;
     margin: 0 0.5vw 0 0.5vw;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .project {
@@ -336,17 +338,51 @@ a[target="_blank"]::after {
 
 .project-item label {
     display: block;
-    opacity: 0.5;
+    opacity: 0.8;
     height: 5vh;
-    text-align: center;
     font-size: 1.5em;
     position: relative;
     border-right: 0.1em solid #8E7871;
     display: flex;
-    text-align: center;
+    text-align: right;
     align-items: center;
     justify-content: right;
     padding-right: 2vw;
+}
+
+.label1:before {
+    content: " ";
+    display: block;
+    width: 2em;
+    height: 2em;
+    background-position: center;
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
+    background-image: url("zen_stock_logo.png");
+}
+
+.label2:before {
+    content: " ";
+    display: block;
+    width: 2em;
+    height: 2em;
+    background-position: center;
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
+    background-image: url("chiron_logo.png");
+    border-radius: 50%;
+}
+
+.label3:before {
+    content: " ";
+    display: block;
+    width: 2em;
+    height: 2em;
+    background-position: center;
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
+    background-image: url("carla_logo.png");
+    border-radius: 50%;
 }
 
 .project-item label:hover {
@@ -380,6 +416,11 @@ a[target="_blank"]::after {
 .content-test h1 {
     margin: 1vh;
     color: #8E7871;
+}
+
+.content-test h3 {
+    border-bottom: 0.1em solid black;
+    padding: 0 2vw 2vh 2vw;
 }
 
 .content-test p {
@@ -416,13 +457,26 @@ input:checked ~ label {
     background-repeat: no-repeat;
 }
 
-.content1 span {
+.content1 > span {
     background-image: url("zen_stock_logo.png");
 }
 
-.content2 span {
+.content2 > span {
     background-image: url("chiron_logo.png");
     border-radius: 50%;
+}
+
+.content3 > span {
+    background-image: url("carla_logo.png");
+}
+
+.layer2 {
+    aspect-ratio: 720/144;
+    background-image: url("bottom-wave.svg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .contact {
@@ -438,11 +492,6 @@ input:checked ~ label {
     display: inline-block;
 }
 
-.layer2 {
-    aspect-ratio: 720/144;
-    background-image: url("bottom-wave.svg");
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.contact h1 {
+    font-size: 3em;
 }
