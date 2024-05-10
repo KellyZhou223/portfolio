@@ -295,7 +295,7 @@ a[target="_blank"]::after {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     height: 70vh;
     width: 80%;
@@ -306,7 +306,6 @@ a[target="_blank"]::after {
     margin: 0 0 10vh 0;
     background-color: white;
     box-shadow: 0.2em 0.2em 0.2em grey;
-    overflow: hidden;
     flex-direction: row;
     position: relative;
 }
@@ -350,39 +349,64 @@ a[target="_blank"]::after {
     padding-right: 2vw;
 }
 
-.label1:before {
-    content: " ";
-    display: block;
+.project-item label:before {
     width: 2em;
     height: 2em;
     background-position: center;
     background-size: 75% 75%;
     background-repeat: no-repeat;
+    display: block;
+}
+
+.label1:before {
+    content: " ";
     background-image: url("zen_stock_logo.png");
 }
 
 .label2:before {
     content: " ";
-    display: block;
-    width: 2em;
-    height: 2em;
-    background-position: center;
-    background-size: 75% 75%;
-    background-repeat: no-repeat;
     background-image: url("chiron_logo.png");
     border-radius: 50%;
 }
 
 .label3:before {
     content: " ";
-    display: block;
-    width: 2em;
-    height: 2em;
-    background-position: center;
-    background-size: 75% 75%;
-    background-repeat: no-repeat;
     background-image: url("carla_logo.png");
-    border-radius: 50%;
+}
+
+.label4:before {
+    content: " ";
+    background-image: url("insta_clone_logo.png");
+}
+
+.label5:before {
+    content: " ";
+    background-image: url("search_logo.png");
+}
+
+.label6:before {
+    content: " ";
+    background-image: url("social_svm_logo.png");
+}
+
+.label7:before {
+    content: " ";
+    background-image: url("canine_logo.png");
+}
+
+.label8:before {
+    content: " ";
+    background-image: url("thread_logo.png");
+}
+
+.label9:before {
+    content: " ";
+    background-image: url("files_logo.png");
+}
+
+.label10:before {
+    content: " ";
+    background-image: url("pager_logo.png");
 }
 
 .project-item label:hover {
@@ -398,19 +422,20 @@ a[target="_blank"]::after {
 .content-test {
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 50%;
     opacity: 0;
-    height: 100%;
+    height: 75%;
     width: 70%;
     display: flex;
-    -webkit-box-align: center;
+    /* -webkit-box-align: center; */
     align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    text-align: center;
+    /* -webkit-box-pack: center; */
+    /* justify-content: center; */
+    /* -webkit-box-orient: vertical; */
+    /* -webkit-box-direction: normal; */
     flex-direction: column;
-    pointer-events: none;
+    
 }
 
 .content-test h1 {
@@ -433,15 +458,20 @@ a[target="_blank"]::after {
     width: 70%;
     -webkit-box-flex: 1;
     flex: 1 0 auto;
-    height: 100%;
+    /* height: 100%; */
 }
   
 input:checked ~ .content-test {
-    transform: translateY(0%);
-    transition: transform 1s, -webkit-transform 1s;
+    transform: translateY(-50%);
+    /* transition: transform 1s, -webkit-transform 1s; */
     opacity: 1;
+    overflow-y: auto;
 }
 
+/* .content-test::-webkit-scrollbar {
+    
+} */
+ 
 input:checked ~ label {
     background-image: linear-gradient(to right,#f7efe9, #8E7871);
     color: white;
@@ -449,9 +479,13 @@ input:checked ~ label {
     opacity: 1;
 }
 
+input:checked ~ label:hover {
+    opacity: 1;
+}
+
 .picto {
-    height: 3em;
-    width: 3em;
+    min-height: 3.5em;
+    width: 3.5em;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -468,6 +502,34 @@ input:checked ~ label {
 
 .content3 > span {
     background-image: url("carla_logo.png");
+}
+
+.content4 > span {
+    background-image: url("insta_clone_logo.png");
+}
+
+.content5 > span {
+    background-image: url("search_logo.png");
+}
+
+.content6 > span {
+    background-image: url("social_svm_logo.png");
+}
+
+.content7 > span {
+    background-image: url("canine_logo.png");
+}
+
+.content8 > span {
+    background-image: url("thread_logo.png");
+}
+
+.content9 > span {
+    background-image: url("files_logo.png");
+}
+
+.content10 > span {
+    background-image: url("pager_logo.png");
 }
 
 .layer2 {
