@@ -372,10 +372,9 @@ a[target="_blank"]::after {
     text-align: right;
     align-items: center;
     justify-content: right;
-    padding-right: 2vw;
 }
 
-.project-item label:before {
+.project-item label:after {
     width: 2em;
     height: 2em;
     background-position: center;
@@ -384,53 +383,53 @@ a[target="_blank"]::after {
     display: block;
 }
 
-.label1:before {
+.label1:after {
     content: " ";
     background-image: url("zen_stock_logo.png");
 }
 
-.label2:before {
+.label2:after {
     content: " ";
     background-image: url("chiron_logo.png");
     border-radius: 50%;
 }
 
-.label3:before {
+.label3:after {
     content: " ";
     background-image: url("carla_logo.png");
 }
 
-.label4:before {
+.label4:after {
     content: " ";
     background-image: url("insta_clone_logo.png");
 }
 
-.label5:before {
+.label5:after {
     content: " ";
     background-image: url("search_logo.png");
 }
 
-.label6:before {
+.label6:after {
     content: " ";
     background-image: url("social_svm_logo.png");
 }
 
-.label7:before {
+.label7:after {
     content: " ";
     background-image: url("canine_logo.png");
 }
 
-.label8:before {
+.label8:after {
     content: " ";
     background-image: url("thread_logo.png");
 }
 
-.label9:before {
+.label9:after {
     content: " ";
     background-image: url("files_logo.png");
 }
 
-.label10:before {
+.label10:after {
     content: " ";
     background-image: url("pager_logo.png");
 }
@@ -573,16 +572,18 @@ input:checked ~ label:hover {
 }
 
 .contact {
+    aspect-ratio: 1080/400;
+    background-image: url("flower-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form {
     position: relative;
     width: 30%;
     margin: auto;
     align-items: center;
     text-align: center;
-}
-
-.contact form {
-    width: 100%;
-    display: inline-block;
 }
 
 .contact h1 {
@@ -593,10 +594,14 @@ input:checked ~ label:hover {
     width: 100%;
     height: 3vh;
     font-size: 1em;
+    font-family: Alice;
 }
 
 .contact textarea {
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    font-family: Alice;
+    min-height: 20vh;
 }
 
 .contact input[type=submit] {

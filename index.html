@@ -230,7 +230,15 @@
                                     <span class="picto"></span>
                                     <h1>askUM</h1>
                                     <h3>Project for EECS 485: Web Systems (Fall 2023)</h3>
-                                    <p>blah blah</p>
+                                    <p>
+                                        A scalable search engine like Google! While working on this application, I learned retrieval concepts such as text analysis (tf-idf) 
+                                        and link analysis (PageRank), and I practiced parallel data processing with MapReduce. Using Hadoop and a pipeline of MapReduce programs 
+                                        written in Python, I created a segmented inverted index of web pages. Additionally, I created index servers, which are REST APIs for each 
+                                        inverted index segment, integrating in PageRank scores to output a list of hits based on the user's queries. Finally, I developed an end-to-end 
+                                        application consisting of an interface for users to search, a server that makes REST API requests to each index server, and a database that stores
+                                        information about the web pages. Combining all these parts, I developed a fully functional and scalable search engine application that allows
+                                        users to find any web page on the internet. 
+                                    </p>
                                     <div class="tools">
                                         <span>Hadoop</span>
                                         <span>React.js</span>
@@ -259,7 +267,7 @@
                                 <label class="label7" for="radio7">Canine Classifier</label>
                                 <div class="content-test content7">
                                     <span class="picto"></span>
-                                    <h1>Canine Classifier</h1>
+                                    <h1>Canine CNN</h1>
                                     <h3>Project for EECS 445: Machine Learning (Winter 2023)</h3>
                                     <p>blah blah</p>
                                     <div class="tools">
@@ -315,7 +323,7 @@
             </div>
             <div class="layer2"></div>
             <div class="contact" id="contact">
-                <div>
+                <div class="form">
                     <h1>Chat with me!</h1>
                     <form id="contact" onSubmit={sendEmail} ref={form}>
                         <label>Name </label>
@@ -327,9 +335,9 @@
                         <input type="submit" value="Send"></input>
                     </form>
                 </div>
-            </div>
-            <div class="footer">
-                <p>©2024 Kelly Zhou</p>
+                <div class="footer">
+                    <p>©2024 Kelly Zhou</p>
+                </div>
             </div>
         </div>
         <script src="app.js"></script>
