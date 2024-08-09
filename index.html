@@ -17,7 +17,7 @@
                     <a href="#about">About</a>
                     <a href="#project">Projects</a>
                     <a href="#contact">Contact</a>
-                    <a href="https://drive.google.com/file/d/12DRyK4tKi-6qkm9mB7gqLTJFtDWCANG0/view?usp=sharing" target="_blank">Resume</a>
+                    <a href="https://drive.google.com/file/d/19VSmtRt5UQcp4T6TKymAXy98CFIwWrnc/view?usp=sharing" target="_blank">Resume</a>
                 </div>
             </div>
             <div class="main-page" id="home">
@@ -160,9 +160,9 @@
                                     <h3>Project for Google x MHacks AI Hackathon (April 2024)</h3>
                                     <p>
                                         A web application driven by AI that customizes summaries of ongoing clinical trial data based on a user's depth of medical 
-                                        expertise and purpose in seeking the information. This application was created to address the information asymmetry between 
-                                        patients and clinical trial data, and seeks to provide more understandable information to any user who wants to learn more 
-                                        about a medical condition.
+                                        expertise and purpose in seeking the information (e.g., to learn more about their diagnosis, for research purposes, etc.). 
+                                        This application was created to address the information asymmetry between patients and clinical trial data, and seeks to 
+                                        provide more understandable information to any user who wants to learn more about a medical condition.
                                     </p>
                                     <div class="tools">
                                         <span>Gemini 1.5 Pro</span>
@@ -296,7 +296,16 @@
                                     <span class="picto"></span>
                                     <h1>Thread Library</h1>
                                     <h3>Project for EECS 482: Operating Systems (Winter 2024)</h3>
-                                    <p>blah blah</p>
+                                    <p>
+                                        I implemented my very own thread library! This library provides a robust framework for thread creation 
+                                        and management, including scheduling, context switching, and termination, as well as synchronization
+                                        mechanisms, including mutexes and condition variables. In addition, this thread library supports multi-processor
+                                        systems to leverage parallelism and increased performance. Some of the challenges that occurred while working on 
+                                        this project were balancing performance and fairness in thread scheduling, managing resources with thread control
+                                        blocks during context switches, avoiding deadlock situations, and handling external thread control events such as 
+                                        interrupts. Through this project, I was able to consider many different design decisions and ultimately build 
+                                        a safe, reliable, and efficient thread library. 
+                                    </p>
                                     <div class="tools">
                                         <span>C++</span>
                                     </div>
@@ -309,7 +318,15 @@
                                     <span class="picto"></span>
                                     <h1>Network File System</h1>
                                     <h3>Project for EECS 482: Operating Systems (Winter 2024)</h3>
-                                    <p>blah blah</p>
+                                    <p>
+                                        A multithreaded, secure network file system! Clients send network messages to the file server, which consist of file system
+                                        operations like create, delete, read, and write. The file server provides a hierarchical system of files and directories,
+                                        which are described by inodes and stored on disk blocks. In order to implement a robust file system, I ensured crash 
+                                        consistency by atomically updating the file system and maintaining a certain order of disk writes. In addition, I utilized
+                                        hand-over-hand locking when traversing through file system objects in order to effectively control access to shared resources 
+                                        across multiple threads. Throughout this project, I was not only able to examine many file system concepts, but also practice
+                                        using TCP sockets and secure multithreaded programming.
+                                    </p>
                                     <div class="tools">
                                         <span>C++</span>
                                         <span>Boost</span>
@@ -323,7 +340,16 @@
                                     <span class="picto"></span>
                                     <h1>Pager</h1>
                                     <h3>Project for EECS 482: Operating Systems (Winter 2024)</h3>
-                                    <p>blah blah</p>
+                                    <p>
+                                        In this project, I designed and implemented a pager (the memory management part of the operating system kernel)
+                                        that manages application processes' virtual address spaces. Application processes communicate with the kernel
+                                        via system calls and page faults to manipulate its address space. The kernel then provides address space abstraction 
+                                        to application processes by reading and writing physical memory, page tables, swap space, and files. In order to 
+                                        optimize performance and minimize thrashing, I employed techniques such as write-back caching, the clock algorithm
+                                        (an approximation of LRU) for page eviction, and eager swap reservation. Through this project, I learned how to 
+                                        plan out effective data structures to store relevant information about each page (dirty page, resident page, etc.), 
+                                        as well as how to manipulate protection bits of page table entries to reflect the different states a page can be in. 
+                                    </p>
                                     <div class="tools">
                                         <span>C++</span>
                                     </div>
