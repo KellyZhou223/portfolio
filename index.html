@@ -58,9 +58,33 @@
                 <h1>Experience</h1>
                 <div class="project-card">
                     <div class="info">
+                        <a href="https://www.autodesk.com/"><img src = "Autodesk_logo.svg" alt="Autodesk logo" width="180"/></a>
+                        <h2>Centralized Authorization Provider</h2>
+                        <p>May 2024 - Aug 2024 | Remote</p>
+                        <p>
+                            <b>Description:</b> During my 12 week internship, I developed and deployed a centralized external authorization provider,
+                            streamlining user access management for services within Autodesk Construction Cloud (ACC). The authorization provider
+                            leverages the OAuth 2.0 framework and employs JWT validation for Bearer tokens, ensuring robust and secure access control. 
+                            With this new authorization provider, developers of ACC services are able to seamlessly expose their APIs to all Autodesk users, 
+                            significantly expanding the reach and user base of their services. Additionally, with all service requests routed through
+                            the authorization provider, performance is optimized through public key caching in order to reduce overhead from upstream requests.
+                        </p>
+                        <div class="tools">
+                            <span>Python</span>
+                            <span>Jenkins</span>
+                            <span>Spinnaker</span>
+                            <span>YAML</span>
+                        </div>
+                    </div>
+                    <div class="diagram">
+                        <img src="splunk_diagram.png" alt="diagram of automated retry mechanism" width="380">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="info">
                         <a href="https://www.splunk.com/"><img src = "Splunk_logo.svg" alt="Splunk logo" width="120"/></a>
                         <h2>Automated Retry of Failed Pipeline Tests</h2>
-                        <p>Jan 2024 - April 2024 | Remote</p>
+                        <p>Jan 2024 - Apr 2024 | Remote</p>
                         <p>
                             <b>Description:</b> With thousands of tests run during the triaging period, analyzing individual failed tests becomes a time-consuming and resource intensive task. 
                             The reason for failure may be due to issues with the build and not with the test cases themselves, in which case, engineers would manually re-run the individual tests again
