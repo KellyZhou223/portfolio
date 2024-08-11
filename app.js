@@ -73,3 +73,13 @@ ctx.strokeStyle = ctx.fillStyle = "#FFFF";
 setTimeout(function() {
   document.getElementById('appear-after').style.display = 'block';
 }, 5000);
+
+
+// Navigation Bar
+var nav_button = document.getElementById("nav-check");
+const links = document.querySelectorAll('.nav-links a')
+links.forEach(l => {
+  l.addEventListener('click', () => {
+    nav_button.checked = false;
+  })
+})

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Alice" rel="stylesheet">
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script src="email.js"></script>
     </head>
     <body>
-        <div>
+        <div class="appear-first">
             <div class="transition-page">
                 <canvas width="600" height="300"></canvas>
             </div>
@@ -15,7 +17,16 @@
                 <div class="logo">
                     <a href="#home"><img src="logo.png" alt="logo"></a>
                 </div>
-                <div class="nav-bar">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header"></div>
+                <div class="nav-btn">
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <div class="nav-links">
                     <a href="#about">About</a>
                     <a href="#project">Projects</a>
                     <a href="#contact">Contact</a>
@@ -23,7 +34,7 @@
                 </div>
             </div>
             <div class="main-page" id="home">
-                <div class="spacer main-content">
+                <div class="main-content">
                     <div class="header">
                         <h1>K e l l y&emsp; Z h o u</h1>
                     </div>
@@ -32,8 +43,9 @@
                     </div>
                 </div>
             </div>
+            <div class="layer1"></div>
         </div>
-        <div class="layer1"></div>
+        
         <div id="appear-after">
             <div class="about" id="about">
                 <h1>Hello, I'm Kelly!</h1>
@@ -165,6 +177,7 @@
                                     <span class="picto"></span>
                                     <h1>ZenStock</h1>
                                     <h3>Project for MHacks XVI (Nov 2023) | 3rd place Best Financial Hack</h3>
+                                    <a href="https://devpost.com/software/zenstock">Check out the submission on Devpost!</a>
                                     <p>
                                         An AI-powered investment application that utilizes natural language processing and sentiment analysis of weekly financial 
                                         news articles to make real-time stock market recommendations. ZenStock aims to help users navigate the complexities of 
@@ -175,6 +188,7 @@
                                         <span>Hugging Face</span>
                                         <span>React.js</span>
                                     </div>
+                                    
                                 </div>
                             </li>
                             <li class="project-item">
@@ -184,6 +198,7 @@
                                     <span class="picto"></span>
                                     <h1>Chiron</h1>
                                     <h3>Project for Google x MHacks AI Hackathon (April 2024)</h3>
+                                    <a href="https://devpost.com/software/chiron-5sxrft">Check out the submission on Devpost!</a>
                                     <p>
                                         A web application driven by AI that customizes summaries of ongoing clinical trial data based on a user's depth of medical 
                                         expertise and purpose in seeking the information (e.g., to learn more about their diagnosis, for research purposes, etc.). 
